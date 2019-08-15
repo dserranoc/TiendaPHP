@@ -1,0 +1,436 @@
+/* ESTILOS GENERALES */
+
+*{
+    padding: 0;
+    margin: 0;
+
+    font-family: sans-serif, Helvetica, Arial;
+}
+
+body {
+    background: url(../img/bg.png);
+}
+
+a{
+    color: #01b1ea;
+}
+
+a:visited {
+    color: #01b1ea;
+}
+
+a:hover {
+    color: #555;
+}
+
+.success-alert{
+    color:green;
+}
+
+.error-alert{
+    color:red;
+}
+
+table {
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+td{
+    border-top: 1px solid #ccc;
+    padding: 2px;
+}
+
+.thumbnail {
+    width: 100px;
+}
+
+/* CONTAINER */
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px grey;
+    background: #f0f0f0;
+}
+
+/* HEADER */
+
+#header {
+    height: 145px;
+    background: #f0f0f0;
+
+}
+
+
+
+
+#logo {
+    padding: 20px;
+    margin-left: 20px;
+    float: left;
+
+}
+#logo img{
+    height: 100px;
+    float: left;
+}
+
+#logo a{
+    float: left;
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-family: 'Open Sans', Helvetica, Arial;
+    text-transform: uppercase;
+    color: #01b1ea;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 18px;
+    margin-left: 25px;
+    text-shadow: 0 2px 1px #222;
+    transition: all 300ms;
+}
+
+#logo a:hover{
+
+    text-shadow: 0 2px 1px #222, 0 0 4px #01b1ea;
+}
+
+/* MENU */
+
+#menu {
+    clear: both;
+    background: #222;
+    color: white;
+    height: 55px;
+    border-bottom: 4px solid #01b1ea;
+
+}
+
+
+#menu ul {
+
+    list-style: none;
+    text-decoration: none;
+    margin: 0 auto;
+    margin-left: 25px;
+}
+
+#menu ul li{
+    line-height: 55px;
+    float: left;
+    border-right: 1px solid #363636;
+}
+
+#menu a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0 12px;
+    transition: all 300ms;
+}
+
+#menu a:first-child{
+    border-left: 1px solid #363636;
+}
+
+#menu a:hover {
+    background: #01b1ea;
+}
+
+/* CONTENT */
+
+#content {
+    margin: 0 auto;
+    overflow: hidden;
+    background: white;
+
+}
+
+/* SIDEBAR */
+
+#sidebar {
+    width: 22%;
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+    min-height: 500px;
+}
+
+#sidebar .block-aside{
+
+    display: block;
+    width: 90%;
+    margin: 5px auto;
+    padding: 10px;
+}
+#sidebar h3{
+    display: block;
+    color: #222;
+    width: 100%;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #e1e1e1;
+    border-bottom: 1px solid #01b1ea;
+}
+
+#lateral ul {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#sidebar ul li{
+    list-style: square;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+/* FORMS */
+
+.form_container {
+    width: 50%;
+}
+
+label,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+select, textarea {
+    display: block;
+    width: 95%;
+    margin: 2px 0;
+}
+
+
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+select, textarea {
+    border: 1px solid #c9c9c9;
+    box-shadow: 0 0 2px #ccc inset;
+    background: white;
+    padding: 2px;
+    color: grey;
+    transition: all 300ms;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    border: 1px solid #1579b5;
+    color: black;
+}
+
+input[type="button"],
+input[type=submit],
+button, .button {
+    display: block;
+    border-radius: 2px;
+    width: auto;
+    padding: 5px;
+    padding-left: 15px; 
+    padding-right: 15px;
+    color: white;
+    background: #2979cd;
+    border: 1px solid #11608e;
+    cursor: pointer; 
+}
+
+.button {
+    background: #33AE3D;
+    color: white !important;
+    text-decoration: none;
+}
+
+.button-small {
+    width: 120px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.manage-button{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.button-red {
+    background: red;
+    border: 1px solid #cf1717;
+}
+
+label,
+input[type="button"],
+input[type=submit],
+button {
+    display: block;
+    margin-top: 10px;
+}
+
+/* MAIN */
+
+#main {
+    width: 72%;
+    min-height: 500px;
+    float: right;
+    border-left: apx solid #ccc;
+    box-shadow: -5px -1px 5px #ddd;
+    padding: 25px;
+}
+
+#main h1 {
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 20px;
+    padding-top: 0;
+}
+
+/* PRODUCTOS */
+.product {
+    width: 30%;
+    border-right: 1px solid #ccc;;
+    float:left;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.product a{
+    color: black;
+    text-decoration: none;
+}
+.product a:hover{
+    color: #555;
+
+}
+
+.product h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.product img {
+    height: 170px;
+    width: 155px;
+    margin-bottom: 10px;
+}
+
+.img-carrito{
+    height: 80px;
+    display: block;
+    margin: 10px auto;
+}
+
+.product p{
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.product-detail {
+    width: 100%;
+}
+.product-detail .product-image {
+    display: block;
+    width: 40%;
+    float: left;
+}
+.product-detail img {
+    display: block;
+    width: 100%;
+    float: left;
+    margin-right: 40px;
+}
+
+.product-detail .product-data {
+    width:50%;
+    float: right;
+    margin-right: 40px;
+}
+
+.product-detail .button {
+    width: 200px;
+    text-align: center;
+}
+
+.product-detail .product-description {
+    margin-bottom: 20px;
+}
+
+.product-detail .product-price {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #444;
+}
+
+
+/* FOOTER */
+
+#footer {
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    background: #222222;
+    border-top: 5px solid #01b1ea;
+}
+
+/* Carrito */
+
+.carrito-total{
+    width: 295px;
+    float: right;
+}
+
+.carrito-total h3{
+    float: left;
+    display: block;
+    margin-top: 5px;
+}
+
+.delete-carrito{
+    width: 295px;
+    float: left;
+}
+
+.button-delete {
+    display: block;
+    float: left;
+    width: 100px;
+}
+.button-carrito {
+
+    width: 70px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.up-down{
+    width: 80px;
+    margin: 0 auto;
+
+}
+
+.up-down .button{
+    display: block;
+    width: 20px;
+    float: left;
+    padding: 2px;
+    margin: 7px ;
+}
+
+
+.button-pedido {
+    display: block;
+    float: right;
+    width: 100px;
+}
